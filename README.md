@@ -32,13 +32,13 @@ Once the build extension is configured distribution management repositories can 
   <distributionManagement>
     <repository>
       <id>swift-release</id>
-      <name>Swift Release Repository</name>
-      <url>swift://<host>/release</url>
+      <name><container name></name>
+      <url>swift://<host>/v3</url>
     </repository>
     <snapshotRepository>
       <id>swift-snapshot</id>
-      <name>Swift Snapshot Repository</name>
-      <url>swift://<host>/snapshot</url>
+      <name><container name></name>
+      <url>swift://<host>/v3</url>
     </snapshotRepository>
   </distributionManagement>
   ...
