@@ -14,7 +14,7 @@ To publish Maven artifacts to swift a build extension must be defined in a proje
       <extension>
         <groupId>com.aerse</groupId>
         <artifactId>swift-maven</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
       </extension>
       ...
     </extensions>
