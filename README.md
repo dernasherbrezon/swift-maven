@@ -31,12 +31,11 @@ Once the build extension is configured distribution management repositories can 
   ...
   <distributionManagement>
     <repository>
-      <id>swift-release</id>
-      <name><container name></name>
+      <id>container-name-snapshot</id>
       <url>swift://<host>/v3</url>
     </repository>
     <snapshotRepository>
-      <id>swift-snapshot</id>
+      <id>container-name-release</id>
       <name><container name></name>
       <url>swift://<host>/v3</url>
     </snapshotRepository>
@@ -53,12 +52,12 @@ Finally the `~/.m2/settings.xml` must be updated to include username and passwor
   <servers>
     ...
     <server>
-      <id>swift-release</id>
+      <id>container-name-release</id>
       <username>0123456789ABCDEFGHIJ</username>
       <password>0123456789abcdefghijklmnopqrstuvwxyzABCD</password>
     </server>
     <server>
-      <id>swift-snapshot</id>
+      <id>container-name-snapshot</id>
       <username>0123456789ABCDEFGHIJ</username>
       <password>0123456789abcdefghijklmnopqrstuvwxyzABCD</password>
     </server>

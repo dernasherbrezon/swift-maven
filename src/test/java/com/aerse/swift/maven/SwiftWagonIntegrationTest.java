@@ -51,7 +51,7 @@ public final class SwiftWagonIntegrationTest {
 	public void start() throws ConnectionException, AuthenticationException {
 		wagon = new SwiftWagon();
 		Repository repo = new Repository("1", "https://api.selcdn.ru/v3");
-		repo.setName("test");
+		repo.setId("test");
 		AuthenticationInfo auth = new AuthenticationInfo();
 		auth.setUserName(System.getProperty("selectel.username"));
 		auth.setPassword(System.getProperty("selectel.password"));

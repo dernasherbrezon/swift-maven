@@ -54,7 +54,7 @@ public class SwiftWagon extends AbstractWagon {
 		}
 		try {
 			client = builder.authenticate();
-			container = repository.getName();
+			container = repository.getId();
 		} catch (org.openstack4j.api.exceptions.AuthenticationException e) {
 			throw new AuthenticationException("unable to authenticate", e);
 		}
