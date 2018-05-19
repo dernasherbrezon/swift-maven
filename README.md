@@ -1,5 +1,5 @@
 # Swift Maven Wagon
-This project is a [Maven Wagon][wagon] for [OpenStack Swift][swift].  In order to to publish artifacts to an swift container, the user (as identified by their access key) must be listed as an owner on the container.
+This project is a [Maven Wagon][wagon] for [OpenStack Swift][swift].  In order to publish artifacts to an swift container, the user (as identified by their username and password) must have access to the container.
 
 ## Usage
 To publish Maven artifacts to swift a build extension must be defined in a project's `pom.xml`.  The latest version of the wagon can be found on the [`swift-maven`][swift-maven] page in Maven Central.
@@ -45,7 +45,7 @@ Once the build extension is configured distribution management repositories can 
 </project>
 ```
 
-Finally the `~/.m2/settings.xml` must be updated to include access and secret keys for the account. The access key should be used to populate the `username` element, and the secret access key should be used to populate the `password` element.
+Finally the `~/.m2/settings.xml` must be updated to include username and password for the account.
 
 ```xml
 <settings>
