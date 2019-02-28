@@ -1,4 +1,5 @@
-# Swift Maven Wagon
+# Swift Maven Wagon [![Build Status](https://travis-ci.org/dernasherbrezon/swift-maven.svg?branch=master)](https://travis-ci.org/dernasherbrezon/swift-maven) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.aerse%3Aswift-maven&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.aerse%3Aswift-maven)
+
 This project is a [Maven Wagon][wagon] for [OpenStack Swift][swift].  In order to publish artifacts to an swift container, the user (as identified by their username and password) must have access to the container.
 
 ## Usage
